@@ -68,6 +68,8 @@ PNG written: output/luminance_table.png
 > Open `output/report.html` in your browser. This is the complete A4
 > photometric datasheet including all diagrams and the UGR catalogue table.
 
+[![Sample photometric report](../examples/sample_isym4_thumb.png)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/123VincentB/eulumdat-quickstart/main/examples/sample_isym4.html)
+
 > `ReportRenderer` and `ReportCollector` are imported from submodules —
 > only `render_ugr_image` and `render_luminance_image` are exported directly
 > from the `eulumdat_report` package.

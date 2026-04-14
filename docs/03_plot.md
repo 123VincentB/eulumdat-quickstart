@@ -42,6 +42,8 @@ Open output/plot.svg in your browser to see the polar intensity diagram.
 > lines represent C90/C270 (transversal). For a linear luminaire like this
 > sample, the two profiles are very different, which is expected.
 
+<img src="../examples/plot.png" width="300" alt="Polar intensity diagram — sample_isym4.ldt">
+
 ---
 
 Script: [`scripts/step_03_plot.py`](../scripts/step_03_plot.py)

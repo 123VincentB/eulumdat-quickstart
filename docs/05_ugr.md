@@ -71,6 +71,8 @@ standard room configurations from CIE 190:2010. The five reflectance
 combinations (70/50/20, 70/30/20, 50/50/20, 50/30/20, 30/30/20) model
 environments from a standard office to a dark industrial space.
 
+<img src="../examples/ugr_table.png" width="600" alt="UGR catalogue table — sample_isym4.ldt">
+
 ---
 
 Script: [`scripts/step_05_ugr.py`](../scripts/step_05_ugr.py)
