@@ -2,7 +2,8 @@
 
 *A step-by-step guide to the `eulumdat-*` Python ecosystem*
 
-EULUMDAT (`.ldt`) is the standard file format for luminaire photometric data,
+The [EULUMDAT format](https://github.com/123VincentB/eulumdat-py/blob/main/docs/eulumdat_format.md)
+(`.ldt`) is the standard file format for luminaire photometric data,
 widely used in lighting design, photometric testing laboratories, and luminaire
 manufacturing. Each file contains a text header (luminaire metadata, lamp data,
 photometric factors) and an intensity matrix in cd/klm across C-planes and
