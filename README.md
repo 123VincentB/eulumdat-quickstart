@@ -70,6 +70,15 @@ Luminaire characteristics:
 
 ---
 
+## Sample report
+
+The final output of this guide is a complete A4 photometric datasheet.
+Click the image to open the interactive HTML report:
+
+[![Sample photometric report](examples/sample_isym4_thumb.png)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/123VincentB/eulumdat-quickstart/main/examples/sample_isym4.html)
+
+---
+
 ## Table of contents
 
 | Step | Guide | Topic |
