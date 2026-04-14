@@ -1,0 +1,13 @@
+eulumdat-py>=1.0.0
+eulumdat-symmetry>=1.0.0
+eulumdat-plot>=1.0.3
+eulumdat-luminance>=1.3.1
+eulumdat-ugr>=1.0.2
+eulumdat-analysis>=1.0.0
+eulumdat-report>=1.1.0
+
+# Bonus — step 08 (IES conversion)
+eulumdat-ies>=1.1.0
+
+# Optional — PDF export in step 07 (requires Chromium)
+# pip install playwright && playwright install chromium
