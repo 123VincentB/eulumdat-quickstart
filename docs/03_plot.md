@@ -46,4 +46,8 @@ Open output/plot.svg in your browser to see the polar intensity diagram.
 
 Script: [`scripts/step_03_plot.py`](../scripts/step_03_plot.py)
 
+> **See also:** `eulumdat-py` includes a lightweight matplotlib-based polar
+> diagram example if you prefer a quick plot without additional dependencies —
+> [02_polar_diagram.md](https://github.com/123VincentB/eulumdat-py/blob/main/examples/02_polar_diagram.md).
+
 **Next step →** [Step 4 — Luminance table and polar diagram](04_luminance.md)
