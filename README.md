@@ -12,7 +12,7 @@ photometric factors) and an intensity matrix in cd/klm across C-planes and
 The `eulumdat-*` ecosystem is a set of 8 Python packages that let you read,
 analyse, and visualise `.ldt` files — from simple header inspection to full
 photometric datasheet generation. It was developed in an ISO 17025 accredited
-photometry laboratory.
+photometry laboratory. All packages are available on [PyPI](https://pypi.org/user/VincentB/).
 
 This guide walks through each package step by step, using two real sample
 files. No prior photometry knowledge is required, but basic Python familiarity
