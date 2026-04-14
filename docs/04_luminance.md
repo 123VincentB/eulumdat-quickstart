@@ -67,8 +67,6 @@ dashed circle at 3 000 cd/m² marking the typical glare threshold.
 
 <img src="../examples/luminance.png" width="300" alt="Polar luminance diagram — sample_isym4.ldt">
 
-<img src="../examples/luminance_table.png" width="600" alt="Luminance table — sample_isym4.ldt">
-
 ---
 
 Script: [`scripts/step_04_luminance.py`](../scripts/step_04_luminance.py)

@@ -19,6 +19,9 @@ eulumdat-report samples/sample_isym4.ldt --no-pdf -o output/
 
 # HTML + PDF (requires: pip install playwright && playwright install chromium)
 eulumdat-report samples/sample_isym4.ldt -o output/
+
+# Include the numerical luminance table section
+eulumdat-report samples/sample_isym4.ldt --lum-table --no-pdf -o output/
 ```
 
 ---
