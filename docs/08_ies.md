@@ -41,8 +41,9 @@ flag (defaults to the source file's directory).
 
 ```python
 from pathlib import Path
-from eulumdat_ies import ies_to_ldt, ldt_to_ies
 from pyldt import LdtReader, LdtWriter
+from eulumdat_ies import ldt_to_ies, ies_to_ldt
+from ldt_symmetry import LdtAutoDetector
 
 Path("output").mkdir(exist_ok=True)
 
@@ -56,11 +57,11 @@ ldt_back = ies_to_ldt("output/sample_isym4.ies")
 LdtWriter.write(ldt_back, "output/sample_isym4_roundtrip.ldt", overwrite=True)
 print("LDT written: output/sample_isym4_roundtrip.ldt")
 
-# After IES → LDT the symmetry is always ISYM=0 (full 360-degree matrix).
-# Use eulumdat-symmetry to re-detect the actual symmetry class:
-from ldt_symmetry import detect_symmetry
-isym = detect_symmetry(ldt_back)
-print(f"Detected symmetry: ISYM={isym}")
+# After IES -> LDT the result always carries ISYM=0 (the IES format does not
+# encode EULUMDAT symmetry). Use LdtAutoDetector to recover the correct value.
+print(f"ISYM on roundtrip object : {ldt_back.header.isym}")
+detected = LdtAutoDetector().detect(ldt_back)
+print(f"Detected symmetry        : ISYM={detected}")
 ```
 
 Expected output:
@@ -68,15 +69,18 @@ Expected output:
 ```
 IES written: output/sample_isym4.ies
 LDT written: output/sample_isym4_roundtrip.ldt
-Detected symmetry: ISYM=4
+ISYM on roundtrip object : 0
+Detected symmetry        : ISYM=4
 ```
 
 > After an IES → LDT conversion the resulting object always carries `ISYM=0`
-> (no assumed symmetry) because the IES format does not encode the EULUMDAT
-> symmetry class. Call `detect_symmetry` from `eulumdat-symmetry` to recover
+> because the IES format does not encode the EULUMDAT symmetry class.
+> Use `LdtAutoDetector().detect(ldt)` from `eulumdat-symmetry` to recover
 > the correct `ISYM` value before running UGR calculations or writing the
 > file for downstream tools that rely on symmetry metadata.
 
 ---
+
+Script: [`scripts/step_08_ies.py`](../scripts/step_08_ies.py)
 
 **Back to start →** [Step 0 — Setting up your environment](00_setup.md)
